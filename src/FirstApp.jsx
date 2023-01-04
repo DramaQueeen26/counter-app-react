@@ -1,12 +1,17 @@
-export const FirstApp = () => {
+export const FirstApp = ( { title, subtitle } ) => {
+
+    /* 
+     * 
+     * Las props es información que se pasa del componente padre al componente hijo, es decir, establecer una comunicación entre componentes.
+     * Se pueden desestructurar como cualquier objeto o arreglo
+     * 
+     */
+
 
     return (
-        // * Para crear códigos en conjuntos sin necesidad de crear un div
-        // ?  <> sinónimo de Fragment
         <>
-            <h1>DramaQueen</h1>
-            {/* <code>{ JSON.stringify( newMessage ) }</code> */}
-            <p>Soy un subtitulo</p>
+            <h1>{ title }</h1>
+            <p>{ subtitle }</p>
         </>
     )
   }
